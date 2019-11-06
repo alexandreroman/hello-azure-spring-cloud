@@ -1,0 +1,16 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
+
+spring:
+  redis:
+    host: localhost
+    port: 6379
+
+server:
+  port: ${PORT:8080}
+
+app:
+  message: Hello Azure Spring Cloud!
